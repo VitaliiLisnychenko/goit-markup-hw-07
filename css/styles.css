@@ -3,6 +3,11 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
+@media screen and (max-width: 319px) {
+  body {
+    min-width: 320px;
+  }
+}
 :root {
   --iris: #4d5ae5;
   --ocean: #404bbf;
@@ -44,13 +49,17 @@ button {
   padding: 0;
 }
 .container {
-  /* Mobile style &>*/
-  min-width: 320px;
-  max-width: 428px;
   padding-left: 14px;
   padding-right: 14px;
   margin-left: auto;
   margin-right: auto;
+}
+/* Mobile style &>*/
+@media screen and (max-width: 767px) {
+  .container {
+    width: 320px;
+    max-width: 428px;
+  }
 }
 /* Tablet styles & > */
 @media only screen and (min-width: 768px) {
@@ -169,7 +178,7 @@ button {
 .menu-toggle-icon {
   stroke: var(--navy-blue);
 }
-/* phone max 427 px*/
+/* phone 428 px*/
 @media screen and (max-width: 767px) {
   .header-block {
     padding-top: 24px;
@@ -229,36 +238,33 @@ button {
   | Main Page1
   |============================
 */
+
 /*Hero section*/
+
 .hero-section {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office.jpg);
-  max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: var(--navy-blue-modal);
-  padding-top: 188px;
-  padding-bottom: 188px;
+  text-align: center;
+  padding-top: 112px;
+  padding-bottom: 112px;
   margin-left: auto;
   margin-right: auto;
 }
 .hero-wraper {
-  text-align: center;
+  
 }
 .tittle {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 32px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  max-width: 496px;
+  margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -284,7 +290,7 @@ button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   align-items: center;
   letter-spacing: 0.04em;
   color: #ffffff;
@@ -293,7 +299,93 @@ button {
 .button-orderservice:focus {
   background-color: var(--ocean);
 }
+/* phone 428 px*/
+@media only screen and (max-width: 767px) {
+  .hero-section {
+    max-width: 428px;
+  }
+  .tittle {
+    width: 320px;
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/bg-mobile1x.jpg");
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/bg-mobile2x.jpg");
+    }
+  }
+}
+/* Tablet 768 - 1157 px*/
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/bg-tablet1x.jpg");
+  }
+  .tittle {
+    width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/bg-tablet@2x.jpg");
+    }
+  }
+}
+/* Desktop min 1158 px*/
+@media only screen and (min-width: 1158px) {
+  .hero-section {
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-desktop1x.jpg);
+  }
+   @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/bg-desktop@2x.jpg");
+    }
+  }
+}
+
 /*1 section*/
+
 .feature-section {
   padding: 120px 0;
 }
