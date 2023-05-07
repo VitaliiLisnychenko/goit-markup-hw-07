@@ -493,15 +493,12 @@ button {
 /*3 section*/
 .team-section {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .team-tittle {
   margin-bottom: 72px;
 }
-.team-list {
-  display: flex;
-  gap: 24px;
-}
+
 .team-list-item {
   width: 264px;
   background-color: #ffffff;
@@ -542,7 +539,6 @@ button {
   gap: 24px;
 }
 .social-item {
-  
 }
 .social-link {
   width: 40px;
@@ -561,6 +557,36 @@ button {
 }
 .social-icon {
   fill: #f4f4fd;
+}
+@media only screen and (max-width: 767px) {
+  .team-list-item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .team-section{
+    padding: 120px 0;
+  }
+  .team-list {
+    display: flex;
+    gap: 24px;
+  }
 }
 /* 4 section */
 .customers-section {
