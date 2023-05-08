@@ -270,8 +270,6 @@ section {
   margin-left: auto;
   margin-right: auto;
 }
-.hero-wraper {
-}
 .tittle {
   font-family: "Roboto";
   font-style: normal;
@@ -558,8 +556,6 @@ section {
   justify-content: center;
   gap: 24px;
 }
-.social-item {
-}
 .social-link {
   width: 40px;
   height: 40px;
@@ -730,8 +726,6 @@ section {
   gap: 16px;
   justify-content: center;
 }
-.footer-item {
-}
 .footer-soc-link {
   width: 40px;
   height: 40px;
@@ -748,10 +742,6 @@ section {
 }
 .footer-icon {
   fill: #f4f4fd;
-}
-.footer-right-side {
-}
-.subscribe-form {
 }
 .subscribe-label {
   display: block;
@@ -1048,8 +1038,6 @@ section {
 
 /*Modal form*/
 
-.modal-form {
-}
 .modal-form-label {
   display: block;
   margin-bottom: 8px;
