@@ -482,6 +482,7 @@ section {
 
 /*2 section*/
 .section-products {
+  padding-top: 0;
   padding-bottom: 120px;
 }
 .second-tittle {
